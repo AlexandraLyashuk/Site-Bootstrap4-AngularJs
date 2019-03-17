@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>My company</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/bootstrap-grid.css" />
+  <link rel="stylesheet" href="styles/bootstrap.css" />
+  <link rel="stylesheet" href="styles/bootstrap-reboot.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/fonts.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+</head>
+
+<body ng-controller="MyFirstController">
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="header__logo col-xl-4 col-lg-3 col-md-3 com-sm-1">
+          <a href="#" class="header__logo--link">
+            mycompany
+          </a>
+        </div>
+        <div class="header__nav col-xl-8 col-lg-9 col-md-9 col-sm-11">
+          <a href="#home" class="header__nav--link">home</a>
+          <a href="#about" class="header__nav--link">about</a>
+          <a href="#services" class="header__nav--link">services</a>
+          <a href="#portfolio" class="header__nav--link">portfolio</a>
+          <a href="#testimonial" class="header__nav--link">testimonial</a>
+          <a href="#contact" class="header__nav--link">contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="main-welcome" id="home">
+    <div class="cantainer">
+      <div class="row">
+        <div class="main-welcome__heading col-12">
+          <div class="main-welcome__heading--company">
+            welcome on
+            <span class="main-welcome__heading--company--last-word">
+              mycompany
+            </span>
+          </div>
+          <div class="main-welcome__heading--description">
+            We are a digital agency with
+            <span class="bold">years of experience</span>
+            and with
+            <span class="bold"> extraordinary people</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about__mac--image col-xl-6 col-lg-8 col-md-12 col-sm-12">
+          <img src="img/mac.png" alt="" />
+        </div>
+        <div class="about__full-description col-xl-6 col-lg-4 col-md-12 col-sm-12">
+          <div class="about__full-description--heading">
+            some words
+            <span class="bold">about us</span>
+          </div>
+          <div class="about__full-description--description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloremque minima nulla nihil consequatur nisi? Obcaecati corporis
+            in a velit ea non incidunt, quia cupiditate consequatur! Quibusdam
+            tempore dolorem unde soluta!
+          </div>
+          <div class="about__full-description--list">
+            <ul>
+              <li class="about__full-description--list--li">
+                <span class="bold">Mission - </span> We deliver uniqueness and
+                quality
+              </li>
+              <li class="about__full-description--list--li">
+                <span class="bold">Skills - </span> Delivering fast and
+                excellent results
+              </li>
+              <li class="about__full-description--list--li">
+                <span class="bold">Clients - </span> Satisfied clients thanks
+                to our experience
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="our-team">
+    <div class="container">
+      <div class="row">
+        <div class="our-team__heading col-12">
+          our team
+        </div>
+      </div>
+      <div class="row">
+        <div class="our-team__staff col-xl-3  col-lg-3 col-md-6 col-sm-6" ng-repeat="person in staff">
+          <div class="our-team__staff--item">
+            <div class="our-team__staff--item--image">
+              <img ng-src="{{person.photo}}" alt="stuff" />
+            </div>
+            <div class="our-team__staff--item--name">
+              <div class="our-team__staff--item--full-name">{{person.fullName}}</div>
+              <div class="our-team__staff--item--job-name">{{person.jobName}}</div>
+            </div>
+            <div class="our-team__staff--item--description">
+              {{person.description}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="our-services" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="our-services__heading col-12">
+          our services
+        </div>
+      </div>
+      <div class="row">
+        <div class="our-services__description col-12">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque est
+          atque sit. Autem, et ex. Ducimus exercitationem in laborum vitae
+          soluta, explicabo aliquid voluptatibus cumque sunt laboriosam dicta,
+          minus saepe.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque est
+          atque sit. Autem, et ex. Ducimus exercitationem in laborum vitae
+          soluta, explicabo aliquid voluptatibus cumque sunt laboriosam dicta,
+          minus saepe.
+        </div>
+      </div>
+      <div class="row">
+        <div class="our-services__directions col-xl-3 col-lg-3 col-md-6 col-sm-6" ng-repeat="service in services">
+          <div class="our-services__directions--item">
+            <div class="our-services__directions--item--image">
+              <img ng-src="{{service.image}}" alt="conputer" />
+            </div>
+            <div class="our-services__directions--item--name">
+              <div class="our-services__directions--item--full-name bold">
+                {{service.fullName}}
+              </div>
+              <div class="our-services__directions--item--description">
+                {{service.description}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="clients">
+    <div class="container">
+      <div class="row">
+        <div class="clients__heading col-12">
+          some of <span class="bold">our clients</span>
+        </div>
+        <div class="clients__gallery col-12">
+          <div class="clients__gallery--image">
+            <img src="img/chanel.png" alt="">
+          </div>
+          <div class="clients__gallery--image">
+            <img src="img/zara.png" alt="">
+          </div>
+          <div class="clients__gallery--image">
+            <img src="img/guerlain.png" alt="">
+          </div>
+          <div class="clients__gallery--image">
+            <img src="img/lancome.png" alt="">
+          </div>
+          <div class="clients__gallery--image">
+            <img src="img/lacoste.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="work" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="work__heading">
+          <div class="work__heading--our-work">
+            take a look at <span class="bold">our work</span>
+          </div>
+          <div class="work__heading--description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Officiis enim molestiae officia placeat, temporibus tempore
+            incidunt pariatur illum perferendis ratione vel veniam corrupti ab,
+            architecto reiciendis quaerat. Nostrum, impedit aliquam.
+            Non libero magnam tempore, harum commodi asperiores illum totam iusto
+            eveniet facere est, aut accusamus dolores velit placeat facilis
+            quibusdam deserunt, earum veniam magni. Soluta repellendus obcaecati
+            error quibusdam enim?
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="work__gallery col-12">
+          <div class="work__gallery--image work__gallery--image_first">
+            <img src="img/photo-gallery-1.png" alt="">
+          </div>
+          <div class="work__gallery--image work__gallery--image_first">
+            <img src="img/photo-gallery-1.png" alt="">
+          </div>
+          <div class="work__gallery--image work__gallery--image_first">
+            <img src="img/photo-gallery-1.png" alt="">
+          </div>
+          <div class="work__gallery--image work__gallery--image_first">
+            <img src="img/photo-gallery-1.png" alt="">
+          </div>
+          <div class="work__gallery--image">
+            <img src="img/photo-gallery-2.png" alt="">
+          </div>
+          <div class="work__gallery--image">
+            <img src="img/photo-gallery-2.png" alt="">
+          </div>
+          <div class="work__gallery--image">
+            <img src="img/photo-gallery-2.png" alt="">
+          </div>
+          <div class="work__gallery--image">
+            <img src="img/photo-gallery-2.png" alt="">
+          </div>
+          <div class="work__gallery--image">
+            <img src="img/photo-gallery-3.png" alt="">
+          </div>
+          <div class="work__gallery--image">
+            <img src="img/photo-gallery-3.png" alt="">
+          </div>
+          <div class="work__gallery--image">
+            <img src="img/photo-gallery-3.png" alt="">
+          </div>
+          <div class="work__gallery--image">
+            <img src="img/photo-gallery-3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="testimonial" id="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="testimonial__heading col-12">
+          <span class="bold">our clients' </span>
+          testimonials
+        </div>
+        <div class="testimonial__item col-12">
+          <div class="testimonal__item--content bold">
+            This book is a treatise on the theory of ethics, very popular during
+            the Renaissance. The first line of Lorem Ipsum,
+            "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+          </div>
+          <s class="testimonial__item--person-full-name">
+            <span class="bold">Dean Martin, </span>
+            CEO Acme Inc.
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="row">
+          <div class="contact__heading col-12 bold">
+            contact us
+          </div>
+          <div class="contact__description col-12">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Doloribus ex quidem maiores ullam quis, at asperiores minus
+            ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </div>
+        </div>
+        <div class="row">
+          <div class="contact__form">
+            <form name="newform" action="post" id="newform">
+              <div class="contact__form__contacts col-12">
+                <div class="contact__form__contacts--name">
+                  <label for="name">Name<span class="red">*</span></label>
+                  <input type="name" name="username" id="name" required>
+                </div>
+                <div class="contact__form__contacts--email">
+                  <label for="email">Email adress<span class="red">*</span></label>
+                  <input type="email" name="useremail" id="email" required>
+                </div>
+              </div>
+              <div class="contact__form--message col-12">
+                <label for="message">Message<span class="red">*</span></label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+              </div>
+              <div class="contact__form--button">
+                <button name="send" form="newform" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer__networking">
+          <a href="https://www.facebook.com/" class="footer__networking--image"><img src="img/facebook.png" alt="facebook"></a> 
+          <a href="https://twitter.com/" class="footer__networking--image"><img src="img/twitter.png" alt="twitter"></a>
+          <a href="https://plus.google.com/" class="footer__networking--image"><img src="img/google.png" alt="google"></a>
+          <a href="https://www.linkedin.com/" class="footer__networking--image"><img src="img/linkedin.png" alt="linkedin"></a>
+          <a href="https://dribbble.com/" class="footer__networking--image"><img src="img/dribbble.png" alt="dribbble"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Comleted</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Thank you for being in touch!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

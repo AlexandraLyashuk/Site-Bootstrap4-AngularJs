@@ -1,0 +1,500 @@
+html {
+  width: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  margin-top: 10px;
+  background-color: #111111;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.header__nav {
+  display: flex;
+}
+.header__nav--link {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header__nav--link::after {
+  content: '';
+  width: auto;
+  display: block;
+  border-bottom: 3px solid #111111;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.header__nav--link:hover::after {
+  border-bottom: 3px solid #fcac45;
+  content: '';
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.header__nav--link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.header__logo--link {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.header__logo--link:hover {
+  text-decoration: none;
+  color:#fff;
+}
+
+.main-welcome {
+  background-color: #111111;
+}
+
+.main-welcome__heading {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 215px;
+}
+
+.main-welcome__heading--company {
+  text-transform: uppercase;
+  font-size: 44px;
+  color: #999;
+  margin-bottom: 20px;
+  font-weight: 100;
+  line-height: 0.8;
+}
+
+.main-welcome__heading--company--last-word {
+  color: orange;
+  font-weight: bold;
+}
+
+.main-welcome__heading--description {
+  color: #999999;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 444px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.about {
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.about__mac--image {
+  margin-top: 140px;
+}
+
+.about__full-description {
+  padding: 0;
+}
+
+.about__full-description--heading {
+  font-size: 34px;
+  border-bottom: 5px solid orange;
+  text-transform: uppercase;
+  padding-bottom: 22px;
+  margin-top: 140px;
+}
+
+.about__full-description--description {
+  color: #999;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.about__full-description--list {
+  font-style: italic;
+  color: #999;
+  margin-bottom: 200px;
+}
+
+.about__full-description--list ul {
+    padding-left: 0px;
+}
+
+.about__full-description--list--li span.bold {
+  font-style: normal;
+}
+
+.about__full-description--list--li {
+    background: url(../img/pointli.png) 0px no-repeat;
+    list-style: none;
+    padding-left: 25px;
+}
+
+.our-team {
+  background: #111111;
+  color: #fff;
+}
+
+.our-team__heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 44px;
+  padding: 100px 0 100px 0;
+  margin-bottom: 50px;
+}
+
+.our-team__heading:after {
+  content: "";
+  display: block;
+  margin: 15px auto;
+  width: 100px;
+  height: 4px;
+  background: orange;
+}
+
+.our-team__staff {
+  text-align: center;
+  padding-bottom: 166px;
+}
+
+.our-team__staff--item--image img {
+  height: inherit;
+  width: auto;
+  position: relative;
+  transform: translate(-25%);
+}
+.our-team__staff--item--image {
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.our-team__staff--item--name {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.our-team__staff--item--full-name {
+  font-weight: bold;
+}
+
+.our-team__staff--item--description {
+  margin-bottom: 50px;
+  font-weight: lighter;
+}
+
+.our-services {
+  background: #fff;
+  padding-top: 100px;
+}
+
+.our-services__heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 44px;
+}
+
+.our-services__heading:after {
+  content: "";
+  display: block;
+  margin: 30px auto;
+  margin-bottom: 50px;
+  width: 100px;
+  height: 4px;
+  background: orange;
+}
+
+.our-services__description {
+  font-size: 16px;
+  font-style: italic;
+  color: #999;
+  text-align: center;
+  margin-bottom: 105px;
+}
+
+.our-services__directions--item {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.our-services__directions--item--image {
+  border: 2px solid orange;
+  border-radius: 100px;
+  padding: 35px;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.our-services__directions--item--image img {
+  max-width: 55px;
+  max-height: 55px;
+}
+
+.our-services__directions--item--full-name {
+  text-transform: uppercase;
+  color: #111111;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.clients {
+  background-color: #111111;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clients__heading {
+  font-size: 44px;
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.clients__heading:after {
+  content: "";
+  display: block;
+  margin: 30px auto;
+  margin-bottom: 100px;
+  width: 100px;
+  height: 4px;
+  background: orange;
+}
+
+.clients__gallery {
+  margin-bottom: 210px;
+}
+
+.clients__gallery--image {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+.work {
+  background-color: #fff;
+  text-align: center;
+}
+
+.work__heading {
+  margin-top: 100px;
+}
+
+.work__heading--our-work {
+  text-transform: uppercase;
+  color: #111111;
+  margin-bottom: 30px;
+  font-size: 44px;
+}
+
+.work__heading--our-work:after {
+  content: "";
+  display: block;
+  margin: 30px auto;
+  margin-bottom: 100px;
+  width: 100px;
+  height: 4px;
+  background: orange;
+}
+
+.work__heading--description {
+  color: #6c6c6c;
+  font-style: italic;
+  margin-bottom: 180px;
+}
+
+.work__gallery--image_first img {
+  position: relative;
+  left: -120px;
+}
+
+.work__gallery--image {
+  display: inline-block; 
+  margin: 10px;
+  width: 265px;
+  height: 235px;
+  overflow: hidden;
+}
+
+.work__gallery {
+  margin-bottom: 100px;
+}
+
+.testimonial {
+  background-color: #111111;
+  text-align: center;
+}
+
+.testimonial__heading {
+  font-size: 44px;
+  color: #fff;
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.testimonial__heading:after {
+  content: "";
+  display: block;
+  margin: 30px auto;
+  margin-bottom: 115px;
+  width: 100px;
+  height: 4px;
+  background: orange;
+}
+
+.testimonial__item {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 170px;
+}
+
+.testimonal__item--content {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.testimonial__item--person-full-name {
+  text-decoration: none;
+  font-weight: 300;
+  color: #b2b2b2;
+}
+
+.testimonial__item--person-full-name .bold {
+  font-weight: 500;
+}
+
+.contact {
+  background-color: #fff;
+}
+
+.contact-wrapper {
+  width: 750px;
+  margin: 0 auto;
+  color: #6c6c6c;
+  font-size: 14px;
+}
+
+.contact__heading {
+  color: #111111;
+  font-size: 44px;
+  margin-top: 100px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contact__heading:after {
+  content: "";
+  display: block;
+  margin: 30px auto;
+  margin-bottom: 55px;
+  width: 115px;
+  height: 4px;
+  background: orange;
+}
+
+.contact__description {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.contact__form {
+  margin: 0 auto;
+}
+.contact__form__contacts {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.red {
+  color: red;
+}
+
+.contact__form__contacts--email {
+  margin-left: 28px;
+}
+
+.contact__form--message textarea {
+  width: 100%;
+  height: 163px;
+}
+
+.contact__form__contacts--email input, .contact__form__contacts--name input{
+  width: 360px;
+  margin-bottom: 30px;
+  height: 40px;
+}
+
+.contact__form__contacts--email input, 
+.contact__form__contacts--name input, 
+.contact__form--message textarea {
+  border: 1px solid #999999;
+}
+
+.contact__form--button {
+  width: 750px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 32px;
+  margin-bottom: 103px;
+}
+
+.contact__form--button button {
+  width: 165px;
+  height: 40px;
+  background-color: #fcac45;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.contact__form--button button:hover {
+  background-color: orange;
+}
+
+.footer {
+  background-color: #222222;
+  height: 90px;
+}
+
+.footer__networking {
+  margin: 30px auto;
+  display: flex;  
+}
+
+.footer__networking--image {
+  margin-right: 15px;
+}
+
+.footer__networking--image:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+      font-size: 80%;
+  }
+}
