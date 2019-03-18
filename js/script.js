@@ -1,13 +1,13 @@
 var app = angular.module('app', [])
 
 app
-.controller('MyFirstController', showPopUp);
+.controller('MyFirstController', mainController);
 
-showPopUp.$inject = ['$rootScope', '$scope', '$http'];
+mainController.$inject = ['$rootScope', '$scope', '$http'];
 
-function showPopUp($rootScope, $scope, $http) {
+function mainController($rootScope, $scope, $http) {
     var ctrl = $scope;
-    console.log(ctrl);
+    
     ctrl.staff = [
         {
             photo: 'img/stuff.jpg',
